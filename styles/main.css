@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Amazon Ember';
+  font-weight: 200;
+  src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff) format("woff"); }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +12,6 @@
 body {
   font-family: "Amazon Ember", Arial, sans-serif;
   background: green; }
-
-@font-face {
-  font-family: 'Amazon Ember';
-  font-weight: 200;
-  src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff) format("woff"); }
 
 .top-navbar {
   height: 60px;
@@ -125,3 +125,24 @@ body {
   width: fit-content;
   border-width: 4px 4px 0 4px;
   border-color: #a7acb2 transparent transparent transparent; }
+
+.sub-navbar {
+  display: flex;
+  background: #232F3E;
+  height: 39px;
+  line-height: 35px; }
+  .sub-navbar-hamburger a {
+    display: flex; }
+    .sub-navbar-hamburger a figure {
+      background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+      background-position: -172px -255px;
+      background-size: 350px;
+      width: 17px;
+      height: 14px; }
+  .sub-navbar-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 7px 8px; }
