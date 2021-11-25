@@ -148,9 +148,21 @@ body {
 
 .main {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 100vh; }
   .main-wrapper {
-    width: 1500px;
-    margin: auto; }
+    width: 1500px; }
     .main-wrapper .black-friday-box {
-      height: 45px; }
+      display: flex;
+      width: 1500px;
+      justify-content: center; }
+    .main-wrapper .black-friday-box img {
+      width: 650px; }
+    .main-wrapper .nav-tree-list {
+      display: flex;
+      list-style: none; }
+      .main-wrapper .nav-tree-list a {
+        text-decoration: none;
+        color: #565959; }
+      .main-wrapper .nav-tree-list span {
+        color: #565959; }
