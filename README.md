@@ -28,7 +28,7 @@ Total time:
             column 3 (Flex)
                 
         section(By it with)
-            picturs (Flex)
+            pictures (Flex)
             content (Flex)
             
         section(Recommended) - 3 hours
