@@ -146,3 +146,10 @@ body {
     font-size: 14px;
     border-radius: 2px;
     padding: 7px 8px; }
+
+.black-friday-box {
+  width: 650px;
+  margin: auto; }
+  .black-friday-box img {
+    height: 45px;
+    width: 650px; }
