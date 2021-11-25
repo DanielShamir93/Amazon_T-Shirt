@@ -151,7 +151,7 @@ body {
   justify-content: center;
   height: 100vh; }
   .main-wrapper {
-    width: 1500px; }
+    width: calc(min(1500px, 100vw)); }
     .main-wrapper .black-friday-box {
       display: flex;
       width: 1500px;
@@ -166,3 +166,7 @@ body {
         color: #565959; }
       .main-wrapper .nav-tree-list span {
         color: #565959; }
+    .main-wrapper .product {
+      display: grid;
+      grid-template-rows: 1;
+      grid-template-columns: 4; }
