@@ -18,95 +18,108 @@ body {
   width: 100vw;
   background: #131920;
   display: flex;
-  justify-content: center; }
-  .top-navbar .logo {
-    height: 50px;
-    width: 113px;
-    border: 1px solid #FFFFFF; }
-    .top-navbar .logo-amazon {
-      background-image: url(../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
-      background-position: -10px -51px;
-      width: 97px;
-      height: 30px;
-      border: 1px; }
-  .top-navbar a {
-    text-decoration: none; }
-    .top-navbar a .geo {
+  justify-content: space-between; }
+  .top-navbar-left {
+    display: flex; }
+    .top-navbar-left .logo {
+      height: 50px;
+      width: 113px;
+      border: 1px solid #FFFFFF; }
+      .top-navbar-left .logo-amazon {
+        background-image: url(../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+        background-position: -10px -51px;
+        width: 97px;
+        height: 30px;
+        border: 1px; }
+    .top-navbar-left a {
+      text-decoration: none; }
+      .top-navbar-left a .geo {
+        display: flex;
+        justify-content: center;
+        width: 86px;
+        height: 50px;
+        border: 1px solid #FFFFFF; }
+        .top-navbar-left a .geo-icon {
+          width: 55px;
+          height: 18px;
+          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+          background-size: 350px;
+          background-repeat: no-repeat;
+          background-position: -71px -378px;
+          margin-top: 8px; }
+        .top-navbar-left a .geo-text p {
+          color: #FFFFFF; }
+        .top-navbar-left a .geo-text p:nth-child(1) {
+          font-size: 12px; }
+        .top-navbar-left a .geo-text p:nth-child(2) {
+          font-size: 14px;
+          font-weight: 700; }
+  .top-navbar-center {
+    display: flex;
+    flex-grow: 1; }
+    .top-navbar-center .search {
       display: flex;
-      justify-content: center;
-      width: 86px;
+      flex-grow: 1; }
+      .top-navbar-center .search select {
+        height: 38px;
+        width: 50px; }
+      .top-navbar-center .search input {
+        width: 100%;
+        height: 38px; }
+  .top-navbar-right {
+    display: flex; }
+    .top-navbar-right .country {
+      width: 50px;
       height: 50px;
       border: 1px solid #FFFFFF; }
-      .top-navbar a .geo-icon {
-        width: 55px;
-        height: 18px;
-        background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
-        background-size: 350px;
-        background-repeat: no-repeat;
-        background-position: -71px -378px;
-        margin-top: 8px; }
-      .top-navbar a .geo-text p {
+      .top-navbar-right .country-flag {
+        background-image: url(../assets/images/rzrQQdi0aRm6Dap.png);
+        background-position: 0px -130px;
+        width: 24px;
+        height: 18px; }
+    .top-navbar-right .account {
+      width: 130px;
+      height: 50px;
+      border: 1px solid #FFFFFF; }
+      .top-navbar-right .account-text {
         color: #FFFFFF; }
-      .top-navbar a .geo-text p:nth-child(1) {
-        font-size: 12px; }
-      .top-navbar a .geo-text p:nth-child(2) {
-        font-size: 14px;
-        font-weight: 700; }
-  .top-navbar .search {
-    min-width: 470px;
-    display: flex; }
-    .top-navbar .search select {
-      height: 38px;
-      width: 50px; }
-    .top-navbar .search input {
-      width: 100%;
-      height: 38px; }
-  .top-navbar .country {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #FFFFFF; }
-    .top-navbar .country-flag {
-      background-image: url(../assets/images/rzrQQdi0aRm6Dap.png);
-      background-position: 0px -130px;
-      width: 24px;
-      height: 18px; }
-  .top-navbar .account {
-    width: 130px;
-    height: 50px;
-    border: 1px solid #FFFFFF; }
-    .top-navbar .account-text {
-      color: #FFFFFF; }
-      .top-navbar .account-text p:nth-child(1) {
-        font-size: 12px; }
-      .top-navbar .account-text p:nth-child(2) {
-        font-size: 14px;
-        font-weight: 700; }
-  .top-navbar .orders {
-    width: 130px;
-    height: 50px;
-    border: 1px solid #FFFFFF; }
-    .top-navbar .orders-text {
-      color: #FFFFFF; }
-      .top-navbar .orders-text p:nth-child(1) {
-        font-size: 12px; }
-      .top-navbar .orders-text p:nth-child(2) {
-        font-size: 14px;
-        font-weight: 700; }
-  .top-navbar .cart {
-    height: 50px;
-    width: 83px;
-    border: 1px solid #FFFFFF;
-    display: flex; }
-    .top-navbar .cart-icon {
-      background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
-      background-position: -10px -340px;
-      background-size: 350px;
-      width: 38px; }
-    .top-navbar .cart-text {
-      color: #FFFFFF; }
-      .top-navbar .cart-text p {
-        font-size: 14px;
-        font-weight: 700; }
+        .top-navbar-right .account-text p:nth-child(1) {
+          font-size: 12px; }
+        .top-navbar-right .account-text p:nth-child(2) {
+          font-size: 14px;
+          font-weight: 700; }
+    .top-navbar-right .orders {
+      width: 130px;
+      height: 50px;
+      border: 1px solid #FFFFFF; }
+      .top-navbar-right .orders-text {
+        color: #FFFFFF; }
+        .top-navbar-right .orders-text p:nth-child(1) {
+          font-size: 12px; }
+        .top-navbar-right .orders-text p:nth-child(2) {
+          font-size: 14px;
+          font-weight: 700; }
+    .top-navbar-right .cart {
+      height: 50px;
+      width: 83px;
+      border: 1px solid #FFFFFF;
+      display: flex; }
+      .top-navbar-right .cart-amount {
+        color: #f08804;
+        font-size: 16px;
+        font-weight: 700;
+        width: 19px;
+        height: 16px; }
+      .top-navbar-right .cart-icon {
+        background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+        background-position: -10px -340px;
+        background-size: 350px;
+        width: 38px; }
+      .top-navbar-right .cart-text {
+        color: #FFFFFF; }
+        .top-navbar-right .cart-text p {
+          font-size: 14px;
+          font-weight: 700; }
 
 .down-arrow {
   width: fit-content;
