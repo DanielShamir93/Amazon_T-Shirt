@@ -10,8 +10,7 @@
   border: 0.5px dashed pink; }
 
 body {
-  font-family: "Amazon Ember", Arial, sans-serif;
-  background: green; }
+  font-family: "Amazon Ember", Arial, sans-serif; }
 
 .top-navbar {
   height: 60px;
@@ -147,9 +146,11 @@ body {
     border-radius: 2px;
     padding: 7px 8px; }
 
-.black-friday-box {
-  width: 650px;
-  margin: auto; }
-  .black-friday-box img {
-    height: 45px;
-    width: 650px; }
+.main {
+  display: flex;
+  justify-content: center; }
+  .main-wrapper {
+    width: 1500px;
+    margin: auto; }
+    .main-wrapper .black-friday-box {
+      height: 45px; }
