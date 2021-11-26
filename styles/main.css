@@ -89,7 +89,8 @@
           border-radius: 4px 0 0 4px;
           border: none;
           text-indent: 3px;
-          font-size: 12px; }
+          font-size: 12px;
+          cursor: pointer; }
         .top-navbar-center .search-category .down-arrow {
           position: absolute;
           right: 10px;
@@ -107,6 +108,8 @@
       .top-navbar-center .search-submit {
         background: #febd69;
         border-radius: 0 4px 4px 0; }
+        .top-navbar-center .search-submit:hover {
+          background: #F3A847; }
         .top-navbar-center .search-submit-button {
           width: 45px;
           height: 38px;
@@ -114,7 +117,8 @@
           background: none;
           background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
           background-position: 2px -280px;
-          background-size: 350px; }
+          background-size: 350px;
+          cursor: pointer; }
   .top-navbar-right {
     display: flex; }
     .top-navbar-right .country {
@@ -233,25 +237,45 @@
           font-weight: 700; }
 
 .sub-navbar {
-  display: flex;
   background: #232F3E;
   height: 39px;
-  line-height: 35px; }
-  .sub-navbar-hamburger a {
-    display: flex; }
-    .sub-navbar-hamburger a figure {
-      background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
-      background-position: -172px -255px;
-      background-size: 350px;
-      width: 17px;
-      height: 14px; }
-  .sub-navbar-links a {
-    color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid #FFFFFF;
-    font-size: 14px;
-    border-radius: 2px;
-    padding: 7px 8px; }
+  display: flex;
+  align-items: center; }
+  .sub-navbar-list {
+    display: flex;
+    list-style: none; }
+    .sub-navbar-list .hamburger {
+      height: 28px;
+      padding: 3px 8px;
+      border: 1px solid #232F3E;
+      border-radius: 2px; }
+      .sub-navbar-list .hamburger a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #FFFFFF; }
+        .sub-navbar-list .hamburger a figure {
+          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+          background-position: -172px -255px;
+          background-size: 350px;
+          width: 17px;
+          height: 14px; }
+        .sub-navbar-list .hamburger a span {
+          padding-left: 4px;
+          font-size: 14px;
+          font-weight: 700; }
+    .sub-navbar-list-link {
+      border: 1px solid #232F3E;
+      border-radius: 2px;
+      height: 28px;
+      line-height: 24px; }
+      .sub-navbar-list-link a {
+        padding: 7px 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 14px; }
+    .sub-navbar-list .hamburger:hover, .sub-navbar-list-link:hover {
+      border: 1px solid #FFFFFF; }
 
 .main {
   display: flex;
