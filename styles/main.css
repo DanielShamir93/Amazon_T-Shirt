@@ -8,23 +8,26 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+:root {
   font-family: "Amazon Ember", Arial, sans-serif; }
 
 .top-navbar {
   height: 60px;
-  width: 100vw;
   background: #131920;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 0 15px; }
   .top-navbar-left {
     display: flex; }
     .top-navbar-left .logo {
       height: 50px;
-      width: 113px;
-      border: 1px solid #FFFFFF;
-      padding: 10px 5px; }
+      width: fit-content;
+      padding-top: 0 10px;
+      border: 1px solid #131920;
+      padding: 10px 5px;
+      border-radius: 2px;
+      position: relative; }
       .top-navbar-left .logo-amazon {
         background-image: url(../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
         background-position: -10px -51px;
@@ -35,30 +38,39 @@ body {
       .top-navbar-left a .geo {
         display: flex;
         justify-content: center;
-        width: 86px;
+        padding: 0 10px;
+        width: fit-content;
         height: 50px;
-        border: 1px solid #FFFFFF;
-        padding: 7px 5px; }
+        border: 1px solid #131920;
+        border-radius: 2px; }
         .top-navbar-left a .geo-icon {
           width: 15px;
           height: 18px;
           background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
           background-size: 350px;
-          background-repeat: no-repeat;
           background-position: -71px -378px;
-          margin-top: 8px; }
-        .top-navbar-left a .geo-text p:nth-child(1) {
-          font-size: 12px;
-          color: #CCCCCC;
-          white-space: nowrap; }
-        .top-navbar-left a .geo-text p:nth-child(2) {
-          font-size: 14px;
-          font-weight: 700;
-          color: #FFFFFF; }
+          position: relative;
+          top: 20px;
+          right: 2px; }
+        .top-navbar-left a .geo-text {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center; }
+          .top-navbar-left a .geo-text span:nth-child(1) {
+            font-size: 12px;
+            font-weight: 400;
+            color: #CCCCCC;
+            white-space: nowrap; }
+          .top-navbar-left a .geo-text span:nth-child(2) {
+            font-size: 14px;
+            font-weight: 700;
+            color: #FFFFFF;
+            position: relative;
+            bottom: 2px; }
   .top-navbar-center {
     display: flex;
     flex-grow: 1;
-    padding: 0 5px; }
+    padding: 0 30px; }
     .top-navbar-center .search {
       display: flex;
       flex-grow: 1; }
@@ -70,7 +82,9 @@ body {
           -webkit-appearance: none;
           -moz-appearance: none;
           border-radius: 4px 0 0 4px;
-          border: none; }
+          border: none;
+          text-indent: 3px;
+          font-size: 12px; }
         .top-navbar-center .search-category .down-arrow {
           position: absolute;
           right: 10px;
@@ -101,11 +115,12 @@ body {
     .top-navbar-right .country {
       width: 50px;
       height: 50px;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #131920;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 5px; }
+      padding-top: 10px;
+      border-radius: 2px; }
       .top-navbar-right .country-flag {
         background-image: url(../assets/images/rzrQQdi0aRm6Dap.png);
         background-position: 0px -130px;
@@ -118,51 +133,87 @@ body {
         border-color: #a7acb2 transparent transparent transparent;
         position: relative;
         top: 4px; }
-    .top-navbar-right .account {
-      width: 130px;
-      height: 50px;
-      border: 1px solid #FFFFFF; }
-      .top-navbar-right .account-text {
-        color: #FFFFFF; }
-        .top-navbar-right .account-text p:nth-child(1) {
-          font-size: 12px; }
-        .top-navbar-right .account-text p:nth-child(2) {
-          font-size: 14px;
-          font-weight: 700; }
-      .top-navbar-right .account .down-arrow {
-        border: solid;
-        border-width: 4px 4px 0 4px;
-        border-color: #a7acb2 transparent transparent transparent; }
-    .top-navbar-right .orders {
-      width: 130px;
-      height: 50px;
-      border: 1px solid #FFFFFF; }
-      .top-navbar-right .orders-text {
-        color: #FFFFFF; }
-        .top-navbar-right .orders-text p:nth-child(1) {
-          font-size: 12px; }
-        .top-navbar-right .orders-text p:nth-child(2) {
-          font-size: 14px;
-          font-weight: 700; }
-    .top-navbar-right .cart {
-      height: 50px;
-      width: 83px;
-      border: 1px solid #FFFFFF;
-      display: flex; }
-      .top-navbar-right .cart-amount {
-        color: #f08804;
-        font-size: 16px;
-        font-weight: 700;
-        width: 19px;
-        height: 16px; }
-      .top-navbar-right .cart-icon {
-        background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
-        background-position: -10px -340px;
-        background-size: 350px;
-        width: 38px; }
-      .top-navbar-right .cart-text {
-        color: #FFFFFF; }
-        .top-navbar-right .cart-text p {
+    .top-navbar-right .account-link {
+      text-decoration: none; }
+      .top-navbar-right .account-link .account {
+        width: fit-content;
+        padding: 0 10px;
+        height: 50px;
+        border: 1px solid #131920;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px; }
+        .top-navbar-right .account-link .account-text {
+          color: #FFFFFF;
+          display: flex;
+          justify-content: center;
+          flex-flow: column wrap;
+          white-space: nowrap; }
+          .top-navbar-right .account-link .account-text p:nth-child(1) {
+            text-decoration: none;
+            font-size: 12px; }
+          .top-navbar-right .account-link .account-text p:nth-child(2) {
+            font-size: 14px;
+            font-weight: 700; }
+        .top-navbar-right .account-link .account .down-arrow {
+          border: solid;
+          border-width: 4px 4px 0 4px;
+          border-color: #a7acb2 transparent transparent transparent;
+          position: relative;
+          top: 10px;
+          left: 3px; }
+    .top-navbar-right .orders-link {
+      text-decoration: none; }
+      .top-navbar-right .orders-link .orders {
+        width: fit-content;
+        padding: 0 10px;
+        height: 50px;
+        border: 1px solid #131920;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px; }
+        .top-navbar-right .orders-link .orders-text {
+          color: #FFFFFF;
+          white-space: nowrap; }
+          .top-navbar-right .orders-link .orders-text p:nth-child(1) {
+            font-size: 12px; }
+          .top-navbar-right .orders-link .orders-text p:nth-child(2) {
+            font-size: 14px;
+            font-weight: 700; }
+    .top-navbar-right .cart-link {
+      text-decoration: none; }
+      .top-navbar-right .cart-link .cart {
+        height: 50px;
+        width: fit-content;
+        padding: 0 10px;
+        border: 1px solid #131920;
+        border-radius: 2px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .top-navbar-right .cart-link .cart-icon {
+          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+          background-position: -10px -340px;
+          background-size: 350px;
+          width: 38px;
+          height: 26px;
+          position: relative; }
+          .top-navbar-right .cart-link .cart-icon-amount {
+            color: #f08804;
+            font-size: 16px;
+            font-weight: 700;
+            width: 19px;
+            height: 16px;
+            position: absolute;
+            left: 18px;
+            bottom: 16px; }
+        .top-navbar-right .cart-link .cart-text {
+          color: #FFFFFF;
+          position: relative;
+          top: 5px;
           font-size: 14px;
           font-weight: 700; }
 
