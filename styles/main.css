@@ -28,13 +28,16 @@
       padding: 10px 5px;
       border-radius: 2px;
       position: relative; }
+      .top-navbar-left .logo:hover {
+        border-color: #FFFFFF; }
       .top-navbar-left .logo-amazon {
         background-image: url(../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
         background-position: -10px -51px;
         width: 97px;
         height: 30px; }
     .top-navbar-left a {
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 5px; }
       .top-navbar-left a .geo {
         display: flex;
         justify-content: center;
@@ -43,6 +46,8 @@
         height: 50px;
         border: 1px solid #131920;
         border-radius: 2px; }
+        .top-navbar-left a .geo:hover {
+          border-color: #FFFFFF; }
         .top-navbar-left a .geo-icon {
           width: 15px;
           height: 18px;
@@ -121,6 +126,8 @@
       justify-content: center;
       padding-top: 10px;
       border-radius: 2px; }
+      .top-navbar-right .country:hover {
+        border-color: #FFFFFF; }
       .top-navbar-right .country-flag {
         background-image: url(../assets/images/rzrQQdi0aRm6Dap.png);
         background-position: 0px -130px;
@@ -134,7 +141,8 @@
         position: relative;
         top: 4px; }
     .top-navbar-right .account-link {
-      text-decoration: none; }
+      text-decoration: none;
+      margin: 0 2px; }
       .top-navbar-right .account-link .account {
         width: fit-content;
         padding: 0 10px;
@@ -144,6 +152,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 2px; }
+        .top-navbar-right .account-link .account:hover {
+          border-color: #FFFFFF; }
         .top-navbar-right .account-link .account-text {
           color: #FFFFFF;
           display: flex;
@@ -174,6 +184,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 2px; }
+        .top-navbar-right .orders-link .orders:hover {
+          border-color: #FFFFFF; }
         .top-navbar-right .orders-link .orders-text {
           color: #FFFFFF;
           white-space: nowrap; }
@@ -183,7 +195,8 @@
             font-size: 14px;
             font-weight: 700; }
     .top-navbar-right .cart-link {
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 2px; }
       .top-navbar-right .cart-link .cart {
         height: 50px;
         width: fit-content;
@@ -194,6 +207,8 @@
         display: flex;
         justify-content: center;
         align-items: center; }
+        .top-navbar-right .cart-link .cart:hover {
+          border-color: #FFFFFF; }
         .top-navbar-right .cart-link .cart-icon {
           background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
           background-position: -10px -340px;
