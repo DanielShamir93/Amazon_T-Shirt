@@ -55,7 +55,7 @@
           background-size: 350px;
           background-position: -71px -378px;
           position: relative;
-          top: 20px;
+          top: 18px;
           right: 2px; }
         .top-navbar-left a .geo-text {
           display: flex;
@@ -78,19 +78,27 @@
     padding: 0 30px; }
     .top-navbar-center .search {
       display: flex;
-      flex-grow: 1; }
+      flex-grow: 1;
+      background: #FFFFFF;
+      border-radius: 4px; }
       .top-navbar-center .search-category {
-        position: relative; }
+        position: relative;
+        border-radius: 4px;
+        background: #f3f3f3;
+        opacity: 0.6; }
+        .top-navbar-center .search-category:hover {
+          background: #dadada;
+          opacity: 1; }
         .top-navbar-center .search-category select {
           height: 38px;
           width: 50px;
           -webkit-appearance: none;
           -moz-appearance: none;
-          border-radius: 4px 0 0 4px;
           border: none;
           text-indent: 3px;
           font-size: 12px;
-          cursor: pointer; }
+          cursor: pointer;
+          background: transparent; }
         .top-navbar-center .search-category .down-arrow {
           position: absolute;
           right: 10px;
@@ -303,7 +311,17 @@
           text-decoration: none;
           color: #565959;
           font-size: 12px;
-          font-weight: bold; }
+          font-weight: bold;
+          position: relative; }
+        .main-wrapper .nav-tree-list a:hover::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          background-color: #565959;
+          left: 0;
+          bottom: 1px;
+          z-index: -100; }
         .main-wrapper .nav-tree-list span {
           color: #565959;
           font-size: 12px;
