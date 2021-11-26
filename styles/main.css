@@ -322,7 +322,7 @@
     .main-wrapper .product {
       display: grid;
       grid-template-rows: 1;
-      grid-template-columns: 38px auto auto auto;
+      grid-template-columns: 45px auto auto auto;
       padding: 0 20px; }
       .main-wrapper .product-mini-pics {
         grid-row: 1 / span 1;
@@ -330,6 +330,9 @@
         padding-top: 30px; }
         .main-wrapper .product-mini-pics ul {
           list-style: none; }
+        .main-wrapper .product-mini-pics-list li:first-child img {
+          border-color: #e77600;
+          box-shadow: rgba(228, 121, 17, 0.5) 0px 0px 3px 2px; }
         .main-wrapper .product-mini-pics img {
           width: 38px;
           border: 1px solid #e0e0e0;
@@ -337,9 +340,18 @@
       .main-wrapper .product-pic {
         grid-row: 1 / span 1;
         grid-column: 2 / span 1;
-        padding-top: 50px; }
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-top: 50px;
+        padding-right: 30px; }
         .main-wrapper .product-pic img {
-          width: 400px; }
+          width: 420px; }
+        .main-wrapper .product-pic span {
+          margin: 70px 0 40px 0;
+          color: #565959;
+          font-size: 14px;
+          font-weight: bold; }
       .main-wrapper .product-content {
         grid-row: 1 / span 1;
         grid-column: 3 / span 1; }
@@ -435,4 +447,76 @@
           font-size: 14px; }
       .main-wrapper .product-buy {
         grid-row: 1 / span 1;
-        grid-column: 4 / span 1; }
+        grid-column: 4 / span 1;
+        padding-left: 50px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; }
+        .main-wrapper .product-buy-box {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          border: 1px solid black;
+          padding: 14px 18px;
+          border-radius: 8px;
+          border-color: rgba(0, 0, 0, 0.2); }
+          .main-wrapper .product-buy-box p {
+            white-space: nowrap;
+            font-size: 14px;
+            padding-bottom: 10px; }
+          .main-wrapper .product-buy-box input[value="Add to Cart"] {
+            font-size: 14px;
+            color: #0f1111;
+            height: 29px;
+            background: #F7CA00;
+            border: none;
+            padding: 0 65px;
+            border-radius: 30px; }
+          .main-wrapper .product-buy-box hr {
+            margin: 10px 0;
+            width: 100%;
+            border-top: transparent;
+            opacity: 0.2; }
+          .main-wrapper .product-buy-box input[value="Add to List"] {
+            height: 29px;
+            font-size: 13px;
+            background: #e7e9ec;
+            border-radius: 3px;
+            border: 1px #8d9096 solid;
+            box-shadow: rgba(213, 217, 217, 0.5);
+            padding-right: 125px;
+            padding-left: 10px; }
+        .main-wrapper .product-buy-share {
+          display: flex;
+          margin-top: 8px; }
+          .main-wrapper .product-buy-share a {
+            padding-left: 10px; }
+          .main-wrapper .product-buy-share a:nth-child(1) {
+            font-size: 13px;
+            text-decoration: none;
+            color: #007185;
+            font-weight: bold; }
+          .main-wrapper .product-buy-share a:nth-child(2) figure {
+            height: 17px;
+            width: 19px;
+            background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
+            background-position: -256px -220px;
+            background-size: 512px 256px; }
+          .main-wrapper .product-buy-share a:nth-child(3) figure {
+            height: 17px;
+            width: 17px;
+            background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
+            background-position: -237px -151px;
+            background-size: 512px 256px; }
+          .main-wrapper .product-buy-share a:nth-child(4) figure {
+            height: 17px;
+            width: 18px;
+            background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
+            background-position: -193px -105px;
+            background-size: 512px 256px; }
+          .main-wrapper .product-buy-share a:nth-child(5) figure {
+            height: 17px;
+            width: 17px;
+            background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
+            background-position: -138px -14px;
+            background-size: 512px 256px; }
