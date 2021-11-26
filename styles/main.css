@@ -169,4 +169,20 @@ body {
     .main-wrapper .product {
       display: grid;
       grid-template-rows: 1;
-      grid-template-columns: 4; }
+      grid-template-columns: 38px auto auto auto; }
+      .main-wrapper .product ul {
+        list-style: none; }
+      .main-wrapper .product-mini-pics {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1; }
+        .main-wrapper .product-mini-pics img {
+          width: 38px; }
+      .main-wrapper .product-pic {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1; }
+      .main-wrapper .product-content {
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1; }
+      .main-wrapper .product-buy {
+        grid-row: 1 / span 1;
+        grid-column: 4 / span 1; }
