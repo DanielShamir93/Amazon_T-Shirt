@@ -525,9 +525,9 @@
             background-position: -138px -14px;
             background-size: 512px 256px; }
     .main-wrapper .customers-consideration .carousel {
+      margin-top: 30px;
       display: flex;
-      justify-content: space-between;
-      height: 305px; }
+      justify-content: space-between; }
       .main-wrapper .customers-consideration .carousel-left-arrow {
         width: 40px;
         display: flex;
@@ -549,7 +549,44 @@
             background-position: -123px -7px;
             background-size: 400px 900px; }
       .main-wrapper .customers-consideration .carousel-content {
-        display: flex; }
+        display: flex;
+        justify-content: center; }
+        .main-wrapper .customers-consideration .carousel-content-item {
+          display: flex;
+          flex-flow: column wrap;
+          width: 160px;
+          margin: 0 10px; }
+          .main-wrapper .customers-consideration .carousel-content-item .item-img-container {
+            height: 180px;
+            display: flex;
+            align-items: center; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-img-container .item-img {
+              width: 160px; }
+          .main-wrapper .customers-consideration .carousel-content-item .item-title {
+            font-size: 14px;
+            color: #007185;
+            font-weight: bold; }
+          .main-wrapper .customers-consideration .carousel-content-item .item-rating {
+            height: 18px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-stars {
+              display: inline-block;
+              width: 80px;
+              height: 18px;
+              background-size: 512px 256px;
+              background-image: url(../assets/images/3-fm1Jbg4IHlyhq.png); }
+            .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-global-rating {
+              color: #007185;
+              font-size: 12px;
+              position: relative;
+              bottom: 5px; }
+          .main-wrapper .customers-consideration .carousel-content-item .item-price {
+            font-size: 17px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-price span {
+              position: relative;
+              bottom: 4px;
+              font-size: 11px; }
+          .main-wrapper .customers-consideration .carousel-content-item .item-shipping-price {
+            font-size: 12px; }
       .main-wrapper .customers-consideration .carousel-right-arrow {
         width: 40px;
         display: flex;
