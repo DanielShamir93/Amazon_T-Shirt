@@ -474,7 +474,8 @@
             background: #F7CA00;
             border: none;
             padding: 0 65px;
-            border-radius: 30px; }
+            border-radius: 30px;
+            box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
           .main-wrapper .product-buy-box hr {
             margin: 10px 0;
             width: 100%;
@@ -487,7 +488,8 @@
             border-radius: 3px;
             border: 1px #8d9096 solid;
             padding-right: 125px;
-            padding-left: 10px; }
+            padding-left: 10px;
+            box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
         .main-wrapper .product-buy-share {
           display: flex;
           margin-top: 8px; }
@@ -523,7 +525,6 @@
             background-position: -138px -14px;
             background-size: 512px 256px; }
     .main-wrapper .customers-consideration .carousel {
-      background: pink;
       display: flex;
       justify-content: space-between;
       height: 305px; }
@@ -539,7 +540,8 @@
           border: 1px solid rgba(0, 0, 0, 0.2);
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
           .main-wrapper .customers-consideration .carousel-left-arrow-button figure {
             width: 11px;
             height: 15px;
@@ -558,7 +560,8 @@
           border: 1px solid rgba(0, 0, 0, 0.2);
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
           .main-wrapper .customers-consideration .carousel-right-arrow-button figure {
             width: 11px;
             height: 15px;
