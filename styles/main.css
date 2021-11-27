@@ -548,6 +548,8 @@
             background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
             background-position: -123px -7px;
             background-size: 400px 900px; }
+      .main-wrapper .customers-consideration .carousel-content {
+        display: flex; }
       .main-wrapper .customers-consideration .carousel-right-arrow {
         width: 40px;
         display: flex;
