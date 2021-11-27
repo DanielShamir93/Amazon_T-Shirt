@@ -563,6 +563,9 @@
             justify-content: center;
             align-items: center;
             box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
+            .main-wrapper .customers-consideration .carousel-left-arrow-button:hover {
+              cursor: pointer;
+              background: #F7FAFA; }
             .main-wrapper .customers-consideration .carousel-left-arrow-button figure {
               width: 11px;
               height: 15px;
@@ -621,6 +624,9 @@
             justify-content: center;
             align-items: center;
             box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
+            .main-wrapper .customers-consideration .carousel-right-arrow-button:hover {
+              cursor: pointer;
+              background: #F7FAFA; }
             .main-wrapper .customers-consideration .carousel-right-arrow-button figure {
               width: 11px;
               height: 15px;
