@@ -653,7 +653,6 @@
   .top-navbar {
     width: 100vw;
     background: #232f3e;
-    height: 48px;
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
@@ -746,7 +745,7 @@
         display: flex;
         justify-content: center; }
         .top-navbar .search-container .search-textfield {
-          width: 85%;
+          width: 90vw;
           height: 38px;
           outline: none;
           border: none;
@@ -763,4 +762,54 @@
             background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
             background-position: 2px -280px;
             background-size: 350px;
-            cursor: pointer; } }
+            cursor: pointer; }
+  .sub-navbar {
+    background-color: #37475a;
+    height: 44px;
+    font-family: Amazon-regular, Arial, sans-serif;
+    padding-left: 15px; }
+    .sub-navbar a {
+      text-decoration: none; }
+      .sub-navbar a .geo {
+        display: flex;
+        align-items: center;
+        height: 44px; }
+        .sub-navbar a .geo-icon {
+          width: 15px;
+          height: 18px;
+          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+          background-size: 350px;
+          background-position: -71px -378px;
+          position: relative; }
+        .sub-navbar a .geo-text {
+          padding-left: 5px; }
+          .sub-navbar a .geo-text span {
+            font-size: 12px;
+            font-weight: 400;
+            color: white;
+            white-space: nowrap; }
+  .sub-navbar {
+    background-color: #37475a;
+    height: 44px;
+    font-family: Amazon-regular, Arial, sans-serif;
+    padding-left: 15px; }
+    .sub-navbar a {
+      text-decoration: none; }
+      .sub-navbar a .geo {
+        display: flex;
+        align-items: center;
+        height: 44px; }
+        .sub-navbar a .geo-icon {
+          width: 15px;
+          height: 18px;
+          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+          background-size: 350px;
+          background-position: -71px -378px;
+          position: relative; }
+        .sub-navbar a .geo-text {
+          padding-left: 5px; }
+          .sub-navbar a .geo-text span {
+            font-size: 12px;
+            font-weight: 400;
+            color: white;
+            white-space: nowrap; } }
