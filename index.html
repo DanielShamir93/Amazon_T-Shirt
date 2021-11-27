@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon.ico">
     <title>Amazon T-shirt</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script type="text/javascript" src="./js/product/product_listeners.js" defer></script>
     <script type="text/javascript" src="./js/carousel/carousel_variables.js" defer></script>
     <script type="text/javascript" src="./js/carousel/carousel_fucntions.js" defer></script>
     <script type="text/javascript" src="./js/carousel/carousel_listeners.js" defer></script>
     <script type="text/javascript" src="./js/cart/cart_listeners.js" defer></script>
-    <link rel="icon" href="./assets/images/favicon.ico">
 </head>
 <body>
     <header>
@@ -139,12 +140,12 @@
             <form class="product">
                 <div class="product-mini-pics">
                     <ul class="product-mini-pics-list">
-                        <li><img src="./assets/images/A13usaonutL._CLa|500,468|614RIQRw2nL.png|0,0,500,468+0.0,0.0,500.0,468.0_AC_SR38,50_.jpeg" alt=""></li>
-                        <li><img src="./assets/images/41XIXyOr1ZL._AC_SR38,50_.jpg" alt=""></li>
+                        <li><img id="mini_pic1" src="./assets/images/A13usaonutL._CLa|500,468|614RIQRw2nL.png|0,0,500,468+0.0,0.0,500.0,468.0_AC_SR38,50_.jpeg" alt=""></li>
+                        <li><img id="mini_pic2" src="./assets/images/41XIXyOr1ZL._AC_SR38,50_.jpg" alt=""></li>
                     </ul>  
                 </div>
                 <div class="product-pic">
-                    <img src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C614RIQRw2nL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX522_.png" alt="t-shirt-img">
+                    <img id="product_pic" src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C614RIQRw2nL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX522_.png" alt="t-shirt-img">
                     <span>Roll over image to zoom in</span>
                 </div>
                 <div class="product-content">
@@ -174,9 +175,9 @@
                                 <span class="color-text-content">Black</span>
                             </div>
                             <div>
-                                <img src="./assets/images/A1jKzO+1adL._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="black-img">
-                                <img src="./assets/images/B1WWMAfTfHS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="blue-img">
-                                <img src="./assets/images/B1-CfijdgoS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="grey-img">
+                                <img id="mini_pic3" src="./assets/images/A1jKzO+1adL._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="black-img">
+                                <img id="mini_pic4" src="./assets/images/B1WWMAfTfHS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="blue-img">
+                                <img id="mini_pic5" src="./assets/images/B1-CfijdgoS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="grey-img">
                             </div>
                         </li>
                         <li class="size">
