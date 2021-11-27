@@ -735,7 +735,7 @@
     .top-navbar .search-container {
       grid-row: 2 / span 1;
       grid-column: 1 / span 2;
-      height: 42px;
+      height: 48px;
       background: #232f3e;
       width: 100vw;
       transform: translateY(-2px); }
@@ -745,15 +745,20 @@
         display: flex;
         justify-content: center; }
         .top-navbar .search-container .search-textfield {
-          width: 90vw;
-          height: 38px;
+          width: 95vw;
+          height: 45px;
           outline: none;
           border: none;
           border-left: 1px solid #d6cfcf;
-          border-radius: 6px 0 0 6px; }
+          border-radius: 10px 10px;
+          position: relative; }
         .top-navbar .search-container .search-submit {
           background: #febd69;
-          border-radius: 0 6px 6px 0; }
+          border-radius: 10px 10px;
+          padding-left: 3px;
+          position: absolute;
+          right: 9px;
+          height: 45px; }
           .top-navbar .search-container .search-submit-button {
             width: 45px;
             height: 38px;
@@ -782,34 +787,33 @@
           background-position: -71px -378px;
           position: relative; }
         .sub-navbar a .geo-text {
-          padding-left: 5px; }
+          position: relative;
+          left: 5px;
+          bottom: 2px; }
           .sub-navbar a .geo-text span {
             font-size: 12px;
             font-weight: 400;
             color: white;
             white-space: nowrap; }
-  .sub-navbar {
-    background-color: #37475a;
-    height: 44px;
-    font-family: Amazon-regular, Arial, sans-serif;
-    padding-left: 15px; }
-    .sub-navbar a {
-      text-decoration: none; }
-      .sub-navbar a .geo {
-        display: flex;
-        align-items: center;
-        height: 44px; }
-        .sub-navbar a .geo-icon {
-          width: 15px;
-          height: 18px;
-          background-image: url(../assets/images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
-          background-size: 350px;
-          background-position: -71px -378px;
-          position: relative; }
-        .sub-navbar a .geo-text {
-          padding-left: 5px; }
-          .sub-navbar a .geo-text span {
-            font-size: 12px;
-            font-weight: 400;
-            color: white;
-            white-space: nowrap; } }
+  .main-content {
+    padding-top: 12px; }
+    .main-content .details {
+      font-family: Amazon-regular, Arial, sans-serif; }
+      .main-content .details-list {
+        list-style: none;
+        padding-left: 15px; }
+        .main-content .details-list .seller {
+          font-size: 13px;
+          text-decoration: none;
+          color: #007185; }
+        .main-content .details-list .title {
+          padding-top: 3px;
+          font-size: 13px;
+          color: #565959; }
+    .main-content .product-pic {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px; }
+      .main-content .product-pic img {
+        width: 90vw; } }
