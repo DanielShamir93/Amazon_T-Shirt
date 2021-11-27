@@ -264,7 +264,7 @@
     list-style: none; }
     .sub-navbar-list .hamburger {
       height: 28px;
-      padding: 3px 8px;
+      padding: 3px 10px;
       border: 1px solid #232F3E;
       border-radius: 2px; }
       .sub-navbar-list .hamburger a {
@@ -285,10 +285,9 @@
     .sub-navbar-list-link {
       border: 1px solid #232F3E;
       border-radius: 2px;
-      height: 28px;
-      line-height: 24px; }
+      height: 28px; }
       .sub-navbar-list-link a {
-        padding: 7px 13px;
+        padding: 0 11px;
         color: #FFFFFF;
         text-decoration: none;
         font-size: 14px; }
