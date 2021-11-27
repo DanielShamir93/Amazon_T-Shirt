@@ -6,8 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: 1px black dotted; }
+  box-sizing: border-box; }
 
 :root {
   font-family: "Amazon Ember", Arial, sans-serif; }
@@ -524,86 +523,89 @@
             background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
             background-position: -138px -14px;
             background-size: 512px 256px; }
-    .main-wrapper .customers-consideration .carousel {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between; }
-      .main-wrapper .customers-consideration .carousel-left-arrow {
-        width: 40px;
+    .main-wrapper .customers-consideration {
+      margin-bottom: 30px; }
+      .main-wrapper .customers-consideration .carousel {
+        margin-top: 30px;
         display: flex;
-        justify-content: center;
-        align-items: center; }
-        .main-wrapper .customers-consideration .carousel-left-arrow-button {
-          width: 34px;
-          height: 37px;
-          border-radius: 7px;
-          border: 1px solid rgba(0, 0, 0, 0.2);
+        justify-content: space-between;
+        min-height: 300px; }
+        .main-wrapper .customers-consideration .carousel-left-arrow {
+          width: 40px;
           display: flex;
           justify-content: center;
-          align-items: center;
-          box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
-          .main-wrapper .customers-consideration .carousel-left-arrow-button figure {
-            width: 11px;
-            height: 15px;
-            background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
-            background-position: -123px -7px;
-            background-size: 400px 900px; }
-      .main-wrapper .customers-consideration .carousel-content {
-        display: flex;
-        justify-content: center; }
-        .main-wrapper .customers-consideration .carousel-content-item {
-          display: flex;
-          flex-flow: column wrap;
-          width: 160px;
-          margin: 0 10px; }
-          .main-wrapper .customers-consideration .carousel-content-item .item-img-container {
-            height: 180px;
+          align-items: center; }
+          .main-wrapper .customers-consideration .carousel-left-arrow-button {
+            width: 34px;
+            height: 37px;
+            border-radius: 7px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
             display: flex;
-            align-items: center; }
-            .main-wrapper .customers-consideration .carousel-content-item .item-img-container .item-img {
-              width: 160px; }
-          .main-wrapper .customers-consideration .carousel-content-item .item-title {
-            font-size: 14px;
-            color: #007185;
-            font-weight: bold; }
-          .main-wrapper .customers-consideration .carousel-content-item .item-rating {
-            height: 18px; }
-            .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-stars {
-              display: inline-block;
-              width: 80px;
-              height: 18px;
-              background-size: 512px 256px;
-              background-image: url(../assets/images/3-fm1Jbg4IHlyhq.png); }
-            .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-global-rating {
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
+            .main-wrapper .customers-consideration .carousel-left-arrow-button figure {
+              width: 11px;
+              height: 15px;
+              background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
+              background-position: -123px -7px;
+              background-size: 400px 900px; }
+        .main-wrapper .customers-consideration .carousel-content {
+          display: flex;
+          justify-content: center; }
+          .main-wrapper .customers-consideration .carousel-content-item {
+            display: flex;
+            flex-flow: column wrap;
+            width: 160px;
+            margin: 0 8px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-img-container {
+              height: 180px;
+              display: flex;
+              align-items: center; }
+              .main-wrapper .customers-consideration .carousel-content-item .item-img-container .item-img {
+                width: 160px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-title {
+              font-size: 14px;
               color: #007185;
-              font-size: 12px;
-              position: relative;
-              bottom: 5px; }
-          .main-wrapper .customers-consideration .carousel-content-item .item-price {
-            font-size: 17px; }
-            .main-wrapper .customers-consideration .carousel-content-item .item-price span {
-              position: relative;
-              bottom: 4px;
-              font-size: 11px; }
-          .main-wrapper .customers-consideration .carousel-content-item .item-shipping-price {
-            font-size: 12px; }
-      .main-wrapper .customers-consideration .carousel-right-arrow {
-        width: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .main-wrapper .customers-consideration .carousel-right-arrow-button {
-          width: 34px;
-          height: 37px;
-          border-radius: 7px;
-          border: 1px solid rgba(0, 0, 0, 0.2);
+              font-weight: bold; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-rating {
+              height: 18px; }
+              .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-stars {
+                display: inline-block;
+                width: 80px;
+                height: 18px;
+                background-size: 512px 256px;
+                background-image: url(../assets/images/3-fm1Jbg4IHlyhq.png); }
+              .main-wrapper .customers-consideration .carousel-content-item .item-rating .item-global-rating {
+                color: #007185;
+                font-size: 12px;
+                position: relative;
+                bottom: 5px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-price {
+              font-size: 17px; }
+              .main-wrapper .customers-consideration .carousel-content-item .item-price span {
+                position: relative;
+                bottom: 4px;
+                font-size: 11px; }
+            .main-wrapper .customers-consideration .carousel-content-item .item-shipping-price {
+              font-size: 12px; }
+        .main-wrapper .customers-consideration .carousel-right-arrow {
+          width: 40px;
           display: flex;
           justify-content: center;
-          align-items: center;
-          box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
-          .main-wrapper .customers-consideration .carousel-right-arrow-button figure {
-            width: 11px;
-            height: 15px;
-            background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
-            background-position: -105px -7px;
-            background-size: 400px 900px; }
+          align-items: center; }
+          .main-wrapper .customers-consideration .carousel-right-arrow-button {
+            width: 34px;
+            height: 37px;
+            border-radius: 7px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
+            .main-wrapper .customers-consideration .carousel-right-arrow-button figure {
+              width: 11px;
+              height: 15px;
+              background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
+              background-position: -105px -7px;
+              background-size: 400px 900px; }

@@ -1,8 +1,22 @@
 
-const getCarouselItems = () => {
+const setCarouselItems = () => {
     const carousel = document.querySelector('.carousel-content');
-    for (let i = 0; i < MAX_CAROUSEL_SIZE; i++) {
-        appendItemToCarousel(carousel, items[i]);
+    // Remove current carousel items
+    carousel.innerHTML = '';
+    
+    if (carouselStart < 0) {
+        // Exceeded carousel-items array from start
+        carouselStart = carouselItems.length - (carouselItems.length % CAROUSEL_AMOUNT);
+    }
+
+    if (carouselStart > carouselItems.length) {
+        // Exceeded carousel-items array from end
+        carouselStart = 0;
+    }
+
+    // Append next carousel items
+    for (let i = carouselStart; i < carouselItems.length && i< carouselStart + CAROUSEL_AMOUNT; i++) {
+        appendItemToCarousel(carousel, carouselItems[i]);
     }
 }
 
@@ -39,7 +53,7 @@ const toInnerHTML = (item) => {
 }
 
 
-getCarouselItems();
+setCarouselItems();
 
 
 

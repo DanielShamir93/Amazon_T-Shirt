@@ -1,4 +1,5 @@
-const MAX_CAROUSEL_SIZE = 8;
+let carouselStart = 0;
+const CAROUSEL_AMOUNT = 8;
 
 const stars = {
     0.5:    { style: 'background-position: -278px -120px;' },
@@ -13,7 +14,7 @@ const stars = {
     5:      { style: 'background-position: -166px -36px;' },
 }
 
-const items = [
+const carouselItems = [
     {
         src: './assets/images/items/31ATAlUkMIL-_AC_SR160-200_.jpg',
         title: 'I\'m thinking - T-Shirt',
