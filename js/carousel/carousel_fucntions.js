@@ -1,6 +1,11 @@
 
 const setCarouselItems = () => {
     const carousel = document.querySelector('.carousel-content');
+    const pageAmount = document.querySelector('.carousel-page-amount');
+
+    // Show number of pages in the carousel
+    pageAmount.textContent = Math.ceil(carouselItems.length / CAROUSEL_AMOUNT);
+    
     // Remove current carousel items
     carousel.innerHTML = '';
     

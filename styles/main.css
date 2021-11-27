@@ -210,6 +210,7 @@
           color: #FFFFFF;
           white-space: nowrap; }
           .top-navbar-right .orders-link .orders-text p:nth-child(1) {
+            color: #CCCCCC;
             font-size: 12px; }
           .top-navbar-right .orders-link .orders-text p:nth-child(2) {
             font-size: 14px;
@@ -309,13 +310,13 @@
     .main-wrapper .nav-tree {
       margin-top: 4px;
       margin-bottom: 20px;
-      margin-left: 20px; }
+      margin-left: 25px; }
       .main-wrapper .nav-tree-list {
         display: flex;
         list-style: none;
         color: #565959; }
         .main-wrapper .nav-tree-list li {
-          padding-right: 5px; }
+          padding-right: 6px; }
         .main-wrapper .nav-tree-list a {
           text-decoration: none;
           color: #565959;
@@ -330,7 +331,7 @@
       display: grid;
       grid-template-rows: 1;
       grid-template-columns: 45px auto auto auto;
-      padding: 0 20px; }
+      padding-left: 20px; }
       .main-wrapper .product-mini-pics {
         grid-row: 1 / span 1;
         grid-column: 1 / span 1;
@@ -341,21 +342,22 @@
           border-color: #e77600;
           box-shadow: rgba(228, 121, 17, 0.5) 0px 0px 3px 2px; }
         .main-wrapper .product-mini-pics img {
-          width: 38px;
-          border: 1px solid #e0e0e0;
-          border-radius: 2px; }
+          width: 40px;
+          border: 0.5px solid rgba(15, 17, 17, 0.4);
+          border-radius: 2px;
+          margin-bottom: 4px; }
       .main-wrapper .product-pic {
         grid-row: 1 / span 1;
         grid-column: 2 / span 1;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 60px;
         padding-right: 30px; }
         .main-wrapper .product-pic img {
           width: 420px; }
         .main-wrapper .product-pic span {
-          margin-top: 70px;
+          margin-top: 74px;
           color: #565959;
           font-size: 14px; }
       .main-wrapper .product-content {
@@ -374,7 +376,7 @@
           font-size: 24px;
           color: #565959; }
         .main-wrapper .product-content hr {
-          margin: 20px 0 12px 0;
+          margin: 20px 0 15px 0;
           opacity: 0.2; }
         .main-wrapper .product-content .price {
           padding-bottom: 10px; }
@@ -430,7 +432,7 @@
         .main-wrapper .product-content .size {
           padding-bottom: 10px; }
           .main-wrapper .product-content .size label {
-            font-size: 16px;
+            font-size: 14px;
             color: #565959;
             display: block;
             margin-bottom: 10px; }
@@ -453,7 +455,8 @@
       .main-wrapper .product-buy {
         grid-row: 1 / span 1;
         grid-column: 4 / span 1;
-        padding-left: 50px;
+        padding-left: 45px;
+        margin-right: 20px;
         display: flex;
         flex-flow: column wrap;
         align-items: center; }
@@ -472,12 +475,13 @@
           .main-wrapper .product-buy-box input[value="Add to Cart"] {
             font-size: 14px;
             color: #0f1111;
-            height: 29px;
-            background: #F7CA00;
+            background: #ffdc3f;
             border: none;
-            padding: 0 65px;
+            padding: 7px 67px;
             border-radius: 30px;
             box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px; }
+          .main-wrapper .product-buy-box input[value="Add to Cart"]:hover {
+            background: #f7ca00; }
           .main-wrapper .product-buy-box hr {
             margin: 12px 0;
             width: 100%;
@@ -486,7 +490,7 @@
           .main-wrapper .product-buy-box input[value="Add to List"] {
             height: 29px;
             font-size: 13px;
-            background: #e7e9ec;
+            background: linear-gradient(#f7f8fa, #e7e9ec);
             border-radius: 3px;
             border: 1px #8d9096 solid;
             padding-right: 125px;
@@ -528,17 +532,23 @@
     .main-wrapper hr {
       border-top: transparent;
       opacity: 0.2;
-      margin: 45px 0 15px 0; }
+      margin: 30px 0 15px 0; }
     .main-wrapper .customers-consideration {
       margin-bottom: 30px; }
       .main-wrapper .customers-consideration h2 {
-        font-family: Amazon-bold, Arial, sans-serif;
+        font-weight: bold;
         font-size: 24px; }
       .main-wrapper .customers-consideration .carousel {
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
-        min-height: 300px; }
+        min-height: 300px;
+        position: relative; }
+        .main-wrapper .customers-consideration .carousel-page-number {
+          position: absolute;
+          right: 0;
+          bottom: 310px;
+          font-size: 14px; }
         .main-wrapper .customers-consideration .carousel-left-arrow {
           width: 40px;
           display: flex;

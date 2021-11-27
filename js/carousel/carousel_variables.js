@@ -1,4 +1,6 @@
 let carouselStart = 0;
+let carouselCurrPage = 1;
+let carouselPageAmount = 1;
 const CAROUSEL_AMOUNT = 8;
 
 const stars = {
