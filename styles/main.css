@@ -6,7 +6,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px black dotted; }
 
 :root {
   font-family: "Amazon Ember", Arial, sans-serif; }
@@ -402,6 +403,7 @@
             font-size: 14px;
             height: 30px;
             padding: 5px 10px;
+            margin-right: 5px;
             border-radius: 0;
             outline: none;
             pointer-events: none;
@@ -421,7 +423,8 @@
             background: #FEF8F2; }
           .main-wrapper .product-content .color img {
             border: 1.5px #e0e0e0 solid;
-            background: #FEF8F2; }
+            background: #FEF8F2;
+            margin-right: 5px; }
         .main-wrapper .product-content .size {
           padding-bottom: 10px; }
           .main-wrapper .product-content .size label {
@@ -432,7 +435,7 @@
           .main-wrapper .product-content .size-select {
             font-size: 13px;
             height: 29px;
-            padding: 5px 2px;
+            padding: 5px 0 5px 5px;
             border-radius: 8px;
             border: 1.5px solid #e0e0e0;
             background: #f3f3f3;
@@ -483,7 +486,6 @@
             background: #e7e9ec;
             border-radius: 3px;
             border: 1px #8d9096 solid;
-            box-shadow: rgba(213, 217, 217, 0.5);
             padding-right: 125px;
             padding-left: 10px; }
         .main-wrapper .product-buy-share {
@@ -520,3 +522,46 @@
             background-image: url(../assets/images/M9SSJsDj8YXHO4p.png);
             background-position: -138px -14px;
             background-size: 512px 256px; }
+    .main-wrapper .customers-consideration .carousel {
+      background: pink;
+      display: flex;
+      justify-content: space-between;
+      height: 305px; }
+      .main-wrapper .customers-consideration .carousel-left-arrow {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main-wrapper .customers-consideration .carousel-left-arrow-button {
+          width: 34px;
+          height: 37px;
+          border-radius: 7px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main-wrapper .customers-consideration .carousel-left-arrow-button figure {
+            width: 11px;
+            height: 15px;
+            background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
+            background-position: -123px -7px;
+            background-size: 400px 900px; }
+      .main-wrapper .customers-consideration .carousel-right-arrow {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main-wrapper .customers-consideration .carousel-right-arrow-button {
+          width: 34px;
+          height: 37px;
+          border-radius: 7px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main-wrapper .customers-consideration .carousel-right-arrow-button figure {
+            width: 11px;
+            height: 15px;
+            background-image: url(../assets/images/McBZv0ZvnbehkIx.png);
+            background-position: -105px -7px;
+            background-size: 400px 900px; }
