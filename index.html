@@ -14,60 +14,251 @@
     <script type="text/javascript" src="./js/cart/cart_listeners.js" defer></script>
 </head>
 <body>
-    <header>
+    <div class="desktop-view">
+        <header>
+            <nav class="top-navbar">
+                <section class="top-navbar-left">
+                    <a href="#">
+                        <div class="logo">
+                            <figure class="logo-amazon"></figure>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="geo">
+                            <figure class="geo-icon"></figure>
+                            <div class="geo-text">
+                                <span>Deliver to</span>
+                                <span>Israel</span>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="top-navbar-center">
+                    <div class="search">
+                        <div class="search-category">
+                            <select name="" id="">
+                                <option value="all">All</option>
+                            </select>
+                            <span class="down-arrow"></span>
+                        </div>
+                        <input class="search-textfield" type="text">
+                        <div class="search-submit">
+                            <input class="search-submit-button" type="button">
+                        </div>
+                    </div>
+                </section>
+                <section class="top-navbar-right">
+                    <a href="#">
+                        <div class="country">
+                            <figure class="country-flag"></figure>
+                            <span class="down-arrow"></span>
+                        </div>
+                    </a>
+                    <a class="account-link" href="#">
+                        <div class="account">
+                            <div class="account-text">
+                                <p>Hello, Sign in</p>
+                                <p>Account & Lists</p>
+                            </div>
+                            <span class="down-arrow"></span>
+                        </div>
+                    </a>
+                    <a class="orders-link" href="#">
+                        <div class="orders">
+                            <div class="orders-text">
+                                <p>Returns</p>
+                                <p>& Orders</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cart-link" href="#">
+                        <div class="cart">
+                            <figure class="cart-icon">
+                                <span class="cart-icon-amount">0</span>
+                            </figure>
+                            <div class="cart-text">
+                                <p>Cart</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </nav>
+            <nav class="sub-navbar">
+                <ul class="sub-navbar-list">
+                    <li class="hamburger">
+                        <a href="#">
+                            <figure></figure>
+                            <span>All</span>
+                        </a>
+                    </li>
+                    <li class="sub-navbar-list-link"><a href="#">Today's Deals</a></li>
+                    <li class="sub-navbar-list-link"><a href="#">Customer Service</a></li>
+                    <li class="sub-navbar-list-link"><a href="#">Registry</a></li>
+                    <li class="sub-navbar-list-link"><a href="#">Gift Cards</a></li>
+                    <li class="sub-navbar-list-link"><a href="#">Sell</a></li>
+                    <li class="sub-navbar-list-link"><a href="#">Local Delivery in Israel</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    
+        <main class="main">
+            <div class="main-wrapper">
+                <a class="black-friday-box" href="#">
+                    <img src="./assets/images/Fuji_BF_ILM_2X._CB652848759_.jpg" alt="">
+                </a>
+                <section class="nav-tree">
+                    <ul class="nav-tree-list">
+                        <li>
+                            <a href="#">Clothing, Shoes & Jewelry</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">Novelty & More</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">Clothing</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">Novelty</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">Tops & Tees</a>
+                            <span>›</span>
+                        </li>
+                        <li>
+                            <a href="#">T-Shirts</a>
+                        </li>
+                    </ul>
+                </section>
+                <form class="product">
+                    <div class="product-mini-pics">
+                        <ul class="product-mini-pics-list">
+                            <li><img id="mini_pic1" src="./assets/images/A13usaonutL._CLa|500,468|614RIQRw2nL.png|0,0,500,468+0.0,0.0,500.0,468.0_AC_SR38,50_.jpeg" alt=""></li>
+                            <li><img id="mini_pic2" src="./assets/images/41XIXyOr1ZL._AC_SR38,50_.jpg" alt=""></li>
+                        </ul>  
+                    </div>
+                    <div class="product-pic">
+                        <img id="product_pic" src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C614RIQRw2nL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX522_.png" alt="t-shirt-img">
+                        <span>Roll over image to zoom in</span>
+                    </div>
+                    <div class="product-content">
+                        <ul>
+                            <li><a class="seller" href="#">Brand: 40667ers</a></li>
+                            <li><h1 class="title">I love Regex - T-Shirt for programmers and nerds</h1></li>
+                            <hr>
+                            <li class="price">
+                                <label for="price-text">Price: </label>
+                                <span class="price-text">$24.85</span>
+                                <span class="price-shipping">+ $20.50 shipping</span>
+                            </li>
+                            <li class="fit">
+                                <div class="fit-type">
+                                    <label for="fit-type-content">Fit Type: </label>
+                                    <span class="fit-type-content">Men</span>
+                                </div>
+                                <div class="fit-options">
+                                    <input type="button" value="Men">
+                                    <input type="button" value="Women">
+                                    <input type="button" value="Youth">
+                                </div>
+                            </li>
+                            <li class="color">
+                                <div class="color-text">
+                                    <label for="color-text-content">Color: </label>
+                                    <span class="color-text-content">Black</span>
+                                </div>
+                                <div>
+                                    <img id="mini_pic3" src="./assets/images/A1jKzO+1adL._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="black-img">
+                                    <img id="mini_pic4" src="./assets/images/B1WWMAfTfHS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="blue-img">
+                                    <img id="mini_pic5" src="./assets/images/B1-CfijdgoS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="grey-img">
+                                </div>
+                            </li>
+                            <li class="size">
+                                <label for="size-select">Size:</label>
+                                <select class="size-select">
+                                    <option value="select">Select</option>
+                                </select>
+                            </li>
+                            <li class="details">
+                                <ul>
+                                    <li><span>Solid colors: 100% Cotton; Heather Grey: 90% Cotton, 10% Polyester; All Other Heathers: 50% Cotton, 50% Polyester </span></li>
+                                    <li><span>Imported</span></li>
+                                    <li><span>Machine Wash</span></li>
+                                    <li><span>Shows your Regular Expression skills </span></li>
+                                    <li><span>Tells everybody that you're the coding god at office</span></li>
+                                    <li><span>Lightweight, Classic fit, Double-needle sleeve and bottom hem</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-buy">
+                        <div class="product-buy-box">
+                            <p>To buy, select <strong>Size</strong></p>    
+                            <input type="button" value="Add to Cart" />
+                            <hr>
+                            <input type="button" value="Add to List">
+                        </div>
+                        <div class="product-buy-share">
+                            <a href="#">Share</a>
+                            <a href="#"><figure></figure></a>
+                            <a href="#"><figure></figure></a>
+                            <a href="#"><figure></figure></a>
+                            <a href="#"><figure></figure></a>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <footer class="customers-consideration">
+                    <h2>Customers also considered these styles</h2>
+                    <div class="carousel">
+                        <p class="carousel-page-number">Page <span class="carousel-curr-page">1</span> of <span class="carousel-page-amount">1</span></p>
+                        <div class="carousel-left-arrow">
+                            <div class="carousel-left-arrow-button">
+                                <figure></figure>
+                            </div>      
+                        </div>
+                        <div class="carousel-content">
+                            // carousel items
+                        </div>
+                        <div class="carousel-right-arrow">
+                            <div class="carousel-right-arrow-button">
+                                <figure></figure>
+                            </div> 
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+
+
+    <div class="mobile-view">
         <nav class="top-navbar">
             <section class="top-navbar-left">
+                <div class="hamburger">
+                    <a href="#">
+                        <figure></figure>
+                    </a>
+                </div>
                 <a href="#">
                     <div class="logo">
                         <figure class="logo-amazon"></figure>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="geo">
-                        <figure class="geo-icon"></figure>
-                        <div class="geo-text">
-                            <span>Deliver to</span>
-                            <span>Israel</span>
-                        </div>
-                    </div>
-                </a>
-            </section>
-            <section class="top-navbar-center">
-                <div class="search">
-                    <div class="search-category">
-                        <select name="" id="">
-                            <option value="all">All</option>
-                        </select>
-                        <span class="down-arrow"></span>
-                    </div>
-                    <input class="search-textfield" type="text">
-                    <div class="search-submit">
-                        <input class="search-submit-button" type="button">
-                    </div>
-                </div>
             </section>
             <section class="top-navbar-right">
-                <a href="#">
-                    <div class="country">
-                        <figure class="country-flag"></figure>
-                        <span class="down-arrow"></span>
-                    </div>
-                </a>
-                <a class="account-link" href="#">
-                    <div class="account">
-                        <div class="account-text">
-                            <p>Hello, Sign in</p>
-                            <p>Account & Lists</p>
-                        </div>
-                        <span class="down-arrow"></span>
-                    </div>
-                </a>
-                <a class="orders-link" href="#">
-                    <div class="orders">
-                        <div class="orders-text">
-                            <p>Returns</p>
-                            <p>& Orders</p>
-                        </div>
+                <a class="profile-link" href="#">
+                    <div class="profile">
+                        <figure class="profile-icon"></figure>
                     </div>
                 </a>
                 <a class="cart-link" href="#">
@@ -75,167 +266,39 @@
                         <figure class="cart-icon">
                             <span class="cart-icon-amount">0</span>
                         </figure>
-                        <div class="cart-text">
-                            <p>Cart</p>
-                        </div>
                     </div>
                 </a>
             </section>
-        </nav>
-        <nav class="sub-navbar">
-            <ul class="sub-navbar-list">
-                <li class="hamburger">
-                    <a href="#">
-                        <figure></figure>
-                        <span>All</span>
-                    </a>
-                </li>
-                <li class="sub-navbar-list-link"><a href="#">Today's Deals</a></li>
-                <li class="sub-navbar-list-link"><a href="#">Customer Service</a></li>
-                <li class="sub-navbar-list-link"><a href="#">Registry</a></li>
-                <li class="sub-navbar-list-link"><a href="#">Gift Cards</a></li>
-                <li class="sub-navbar-list-link"><a href="#">Sell</a></li>
-                <li class="sub-navbar-list-link"><a href="#">Local Delivery in Israel</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-
-    <main class="main">
-        <div class="main-wrapper">
-            <a class="black-friday-box" href="#">
-                <img src="./assets/images/Fuji_BF_ILM_2X._CB652848759_.jpg" alt="">
-            </a>
-            <section class="nav-tree">
-                <ul class="nav-tree-list">
-                    <li>
-                        <a href="#">Clothing, Shoes & Jewelry</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Novelty & More</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Clothing</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Novelty</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Women</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Tops & Tees</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">T-Shirts</a>
-                    </li>
-                </ul>
+            <section class="search-container">
+                <div class="search">
+                    <input class="search-textfield" type="text">
+                    <div class="search-submit">
+                        <input class="search-submit-button" type="button">
+                    </div>
+                </div>
             </section>
-            <form class="product">
-                <div class="product-mini-pics">
-                    <ul class="product-mini-pics-list">
-                        <li><img id="mini_pic1" src="./assets/images/A13usaonutL._CLa|500,468|614RIQRw2nL.png|0,0,500,468+0.0,0.0,500.0,468.0_AC_SR38,50_.jpeg" alt=""></li>
-                        <li><img id="mini_pic2" src="./assets/images/41XIXyOr1ZL._AC_SR38,50_.jpg" alt=""></li>
-                    </ul>  
-                </div>
-                <div class="product-pic">
-                    <img id="product_pic" src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C614RIQRw2nL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX522_.png" alt="t-shirt-img">
-                    <span>Roll over image to zoom in</span>
-                </div>
-                <div class="product-content">
-                    <ul>
-                        <li><a class="seller" href="#">Brand: 40667ers</a></li>
-                        <li><h1 class="title">I love Regex - T-Shirt for programmers and nerds</h1></li>
-                        <hr>
-                        <li class="price">
-                            <label for="price-text">Price: </label>
-                            <span class="price-text">$24.85</span>
-                            <span class="price-shipping">+ $20.50 shipping</span>
-                        </li>
-                        <li class="fit">
-                            <div class="fit-type">
-                                <label for="fit-type-content">Fit Type: </label>
-                                <span class="fit-type-content">Men</span>
-                            </div>
-                            <div class="fit-options">
-                                <input type="button" value="Men">
-                                <input type="button" value="Women">
-                                <input type="button" value="Youth">
-                            </div>
-                        </li>
-                        <li class="color">
-                            <div class="color-text">
-                                <label for="color-text-content">Color: </label>
-                                <span class="color-text-content">Black</span>
-                            </div>
-                            <div>
-                                <img id="mini_pic3" src="./assets/images/A1jKzO+1adL._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="black-img">
-                                <img id="mini_pic4" src="./assets/images/B1WWMAfTfHS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="blue-img">
-                                <img id="mini_pic5" src="./assets/images/B1-CfijdgoS._CLa|500,468|61XudvMfQSL.png|0,0,500,468+0.0,0.0,500.0,468.0._SX38_SY50_CR,0,0,38,50_.jpeg" alt="grey-img">
-                            </div>
-                        </li>
-                        <li class="size">
-                            <label for="size-select">Size:</label>
-                            <select class="size-select">
-                                <option value="select">Select</option>
-                            </select>
-                        </li>
-                        <li class="details">
-                            <ul>
-                                <li><span>Solid colors: 100% Cotton; Heather Grey: 90% Cotton, 10% Polyester; All Other Heathers: 50% Cotton, 50% Polyester </span></li>
-                                <li><span>Imported</span></li>
-                                <li><span>Machine Wash</span></li>
-                                <li><span>Shows your Regular Expression skills </span></li>
-                                <li><span>Tells everybody that you're the coding god at office</span></li>
-                                <li><span>Lightweight, Classic fit, Double-needle sleeve and bottom hem</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-buy">
-                    <div class="product-buy-box">
-                        <p>To buy, select <strong>Size</strong></p>    
-                        <input type="button" value="Add to Cart" />
-                        <hr>
-                        <input type="button" value="Add to List">
-                    </div>
-                    <div class="product-buy-share">
-                        <a href="#">Share</a>
-                        <a href="#"><figure></figure></a>
-                        <a href="#"><figure></figure></a>
-                        <a href="#"><figure></figure></a>
-                        <a href="#"><figure></figure></a>
-                    </div>
-                </div>
-            </form>
-            <hr>
-            <footer class="customers-consideration">
-                <h2>Customers also considered these styles</h2>
-                <div class="carousel">
-                    <p class="carousel-page-number">Page <span class="carousel-curr-page">1</span> of <span class="carousel-page-amount">1</span></p>
-                    <div class="carousel-left-arrow">
-                        <div class="carousel-left-arrow-button">
-                            <figure></figure>
-                        </div>      
-                    </div>
-                    <div class="carousel-content">
-                        
-                    </div>
-                    <div class="carousel-right-arrow">
-                        <div class="carousel-right-arrow-button">
-                            <figure></figure>
-                        </div> 
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </main>
+            
+        </nav>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 </body>
 </html>
